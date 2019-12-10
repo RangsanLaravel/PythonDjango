@@ -15,3 +15,12 @@ class Expense(models.Model):
 
     def __str__(self):
         return self.expense_name
+
+class Contractus(models.Model):
+    name =models.CharField(max_length=200)
+    email =models.CharField(max_length=200)
+    subject =models.CharField(max_length=200)
+    message =models.TextField(max_length=500)
+
+    def __str__(self):
+        return self.subject
